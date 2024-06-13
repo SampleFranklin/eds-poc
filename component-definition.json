@@ -79,7 +79,8 @@
                 "resourceType": "core/franklin/components/section/v1/section",
                 "template": {
                   "filter": "arena-section",
-                  "name": "Arena Section"
+                  "name": "Arena Section",
+                  "style": "arena-section"
                 }
               }
             }
@@ -94,7 +95,8 @@
                 "resourceType": "core/franklin/components/section/v1/section",
                 "template": {
                   "filter": "nexa-section",
-                  "name": "Nexa Section"
+                  "name": "Nexa Section",
+                  "style": "nexa-section"
                 }
               }
             }
