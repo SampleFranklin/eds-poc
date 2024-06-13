@@ -19,15 +19,25 @@
     ]
   },
   {
-    "id": "section",
+    "id": "arena-section",
     "components": [
       "text",
       "image",
       "button",
       "title",
       "hero",
-      "cards",
       "columns"
+    ]
+  },
+  {
+    "id": "nexa-section",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "hero",
+      "cards"
     ]
   },
   {

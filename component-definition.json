@@ -59,13 +59,29 @@
       "id": "sections",
       "components": [
         {
-          "title": "Section",
-          "id": "section",
+          "title": "Arena Section",
+          "id": "arena-section",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/section/v1/section",
-                "template": {}
+                "template": {
+                  "filter": "arena-section"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Nexa Section",
+          "id": "nexa-section",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/section/v1/section",
+                "template": {
+                  "filter": "nexa-section"
+                }
               }
             }
           }
