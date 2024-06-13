@@ -2,6 +2,7 @@
   {
     "id": "main",
     "components": [
+      "section",
       "arena-section",
       "nexa-section"
     ]
@@ -17,6 +18,18 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "section",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "hero",
+      "columns",
+      "cards"
     ]
   },
   {
