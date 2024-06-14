@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p71852-e1137339.adobeaemcloud.com/bin/franklin.delivery/samplefranklin/eds-poc/develop"
+    url: "https://author-p71852-e1137339.adobeaemcloud.com/bin/franklin.delivery/samplefranklin/eds-poc/main"
     type: "markup"
     suffix: ".html"
