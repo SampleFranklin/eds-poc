@@ -29,7 +29,8 @@
       "title",
       "hero",
       "columns",
-      "cards"
+      "cards",
+      "highlights"
     ]
   },
   {
@@ -59,5 +60,11 @@
     "components": [
       "card"
     ]
-  }
+  },
+  {
+  "id": "highlights",
+  "components": [
+    "highlight"
+  ]
+}
 ]
