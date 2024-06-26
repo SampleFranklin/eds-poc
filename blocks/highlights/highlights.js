@@ -56,7 +56,7 @@ export default function decorate(block) {
                                <div class="highlight__content">
                                    <div class="highlight__info">
                                        ${(pretitle) ? `<div class="highlight__pretitle"><p>${pretitle}</p></div>` : ''}
-                                       ${(title) ? `<div class="highlight__title"><h3>${title}</h3></div>` : ''}
+                                       ${(title) ? `<div class="highlight__title">${title}</div>` : ''}
                                        ${(description) ? `<div class="highlight__description">${description}</div>` : ''}
                                    </div>
                                    ${ctaHtml}
