@@ -2,6 +2,8 @@ import utility from '../../utility/utility.js';
 import ctaUtils from '../../utility/ctaUtils.js';
 
 export default function decorate(block) {
+    block.parentNode.classList.add('container');
+
     function initImage(image, altTextEl) {
       const img = image.querySelector('img');
       img.removeAttribute('width');
@@ -21,6 +23,7 @@ export default function decorate(block) {
               descriptionEl,
               ctaLinkEl,
               ctaTargetEl,
+              backgroundColorEl
             ] = child.children;
 
         const backgroundImage = backgroundImageEl?.querySelector('picture');
@@ -36,6 +39,7 @@ export default function decorate(block) {
         const pretitle = pretitleEl?.textContent?.trim();
         const title = titleEl?.textContent?.trim();
         const description = Array.from(descriptionEl.querySelectorAll('p')).map((p) => p.outerHTML).join('');
+        const backgroundColor = backgroundColorEl?.textContent?.trim();
 
         const primaryCta = ctaUtils.getLink(ctaLinkEl, '', ctaTargetEl, 'primary__btn');
         let ctaHtml = '';
@@ -56,11 +60,12 @@ export default function decorate(block) {
                                <div class="highlight__content">
                                    <div class="highlight__info">
                                        ${(pretitle) ? `<div class="highlight__pretitle"><p>${pretitle}</p></div>` : ''}
-                                       ${(title) ? `<div class="highlight__title">${title}</div>` : ''}
+                                       ${(title) ? `<h4 class="highlight__title">${title}</h4>` : ''}
                                        ${(description) ? `<div class="highlight__description">${description}</div>` : ''}
                                    </div>
                                    ${ctaHtml}
                                </div>
+                               ${(backgroundColor) ? `<div class="highlight__bg-color card-${(backgroundColor)}"></div>` : ''}
                      `),
         );
         child.classList.add('highlight__card');
