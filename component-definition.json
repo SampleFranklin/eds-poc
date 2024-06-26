@@ -259,7 +259,7 @@
                 "template": {
                   "name": "Highlight",
                   "model": "highlight",
-                  "titleType": "h2"
+                  "titleType": "h4"
                 }
               }
             }
