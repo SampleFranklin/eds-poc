@@ -30,7 +30,8 @@
       "hero",
       "columns",
       "cards",
-      "highlights"
+      "highlights",
+      "carousel"
     ]
   },
   {
@@ -62,9 +63,15 @@
     ]
   },
   {
-  "id": "highlights",
-  "components": [
-    "highlight"
-  ]
-}
+    "id": "highlights",
+    "components": [
+      "highlight"
+    ]
+  },
+  {
+    "id": "carousel",
+    "components": [
+      "teaser"
+    ]
+  }
 ]
