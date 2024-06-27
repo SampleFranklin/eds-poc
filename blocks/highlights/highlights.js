@@ -56,7 +56,6 @@ export default function decorate(block) {
           'beforeend',
           utility.sanitizeHtml(`
                                ${(backgroundImage) ? `<div class="highlight__backgroundImage">${backgroundImage.outerHTML}</div>` : ''}
-                               ${(foregroundImage) ? `<div class="highlight__foregroundImage">${foregroundImage.outerHTML}</div>` : ''}
                                <div class="highlight__content">
                                    <div class="highlight__info">
                                        ${(pretitle) ? `<div class="highlight__pretitle"><p>${pretitle}</p></div>` : ''}
@@ -65,6 +64,7 @@ export default function decorate(block) {
                                    </div>
                                    ${ctaHtml}
                                </div>
+                               ${(foregroundImage) ? `<div class="highlight__foregroundImage">${foregroundImage.outerHTML}</div>` : ''}
                                ${(backgroundColor) ? `<div class="highlight__bg-color card-${(backgroundColor)}"></div>` : ''}
                      `),
         );
