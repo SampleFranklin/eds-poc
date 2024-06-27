@@ -71,7 +71,9 @@
   {
     "id": "carousel",
     "components": [
-      "teaser"
+      "teaser",
+      "ctaWithChangingIcon"
     ]
   }
+
 ]
