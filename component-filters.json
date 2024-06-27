@@ -31,7 +31,8 @@
       "columns",
       "cards",
       "highlights",
-      "carousel"
+      "carousel",
+      "widget"
     ]
   },
   {
@@ -71,7 +72,12 @@
   {
     "id": "carousel",
     "components": [
-      "teaser",
+      "ctaWithChangingIcon"
+    ]
+  },
+  {
+    "id": "widget",
+    "components": [
       "ctaWithChangingIcon"
     ]
   }
