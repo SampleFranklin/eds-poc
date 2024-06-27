@@ -30,9 +30,7 @@
       "hero",
       "columns",
       "cards",
-      "highlights",
-      "carousel",
-      "widget"
+      "highlights"
     ]
   },
   {
@@ -68,18 +66,5 @@
     "components": [
       "highlight"
     ]
-  },
-  {
-    "id": "carousel",
-    "components": [
-      "ctaWithChangingIcon"
-    ]
-  },
-  {
-    "id": "widget",
-    "components": [
-      "highlight"
-    ]
   }
-
 ]
