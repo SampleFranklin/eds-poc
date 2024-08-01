@@ -421,7 +421,7 @@
       {
         "component": "container",
         "label": "Popular City 1",
-        "name": "container-city-1",
+        "name": "city-1",
         "valueType": "string",
         "collapsible": true,
         "fields": [
@@ -443,7 +443,7 @@
       {
         "component": "container",
         "label": "Popular City 2",
-        "name": "container-city-2",
+        "name": "city-2",
         "valueType": "string",
         "collapsible": true,
         "fields": [
@@ -458,72 +458,6 @@
             "name": "reference",
             "value": "",
             "label": "City 2 Icon",
-            "valueType": "string"
-          }
-        ]
-      },
-      {
-        "component": "container",
-        "label": "Popular City 3",
-        "name": "container-city-3",
-        "valueType": "string",
-        "collapsible": true,
-        "fields": [
-          {
-            "component": "text-input",
-            "label": "City 3 Name",
-            "name": "text",
-            "valueType": "string"
-          },
-          {
-            "component": "aem-content",
-            "name": "reference",
-            "value": "",
-            "label": "City 3 Icon",
-            "valueType": "string"
-          }
-        ]
-      },
-      {
-        "component": "container",
-        "label": "Popular City 4",
-        "name": "container-city-4",
-        "valueType": "string",
-        "collapsible": true,
-        "fields": [
-          {
-            "component": "text-input",
-            "label": "City 4 Name",
-            "name": "text",
-            "valueType": "string"
-          },
-          {
-            "component": "aem-content",
-            "name": "reference",
-            "value": "",
-            "label": "City 4 Icon",
-            "valueType": "string"
-          }
-        ]
-      },
-      {
-        "component": "container",
-        "label": "Popular City 5",
-        "name": "container-city-5",
-        "valueType": "string",
-        "collapsible": true,
-        "fields": [
-          {
-            "component": "text-input",
-            "label": "City 5 Name",
-            "name": "text",
-            "valueType": "string"
-          },
-          {
-            "component": "aem-content",
-            "name": "reference",
-            "value": "",
-            "label": "City 5 Icon",
             "valueType": "string"
           }
         ]
