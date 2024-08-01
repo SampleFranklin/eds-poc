@@ -48,6 +48,7 @@
   font-family: "Anek Latin";
   font-size: 16px;
   line-height: 20px; /* 125% */
+  font-weight: 500;
   text-transform: capitalize;
   padding-bottom: 8px;
   margin: 0;
@@ -55,6 +56,9 @@
 
 .highlight__title {
   border-bottom: 1px solid #000;
+}
+.highlight__description p {
+  color: #575a5e;
 }
 .highlight__actions {
   display: flex;
@@ -104,6 +108,9 @@
 }
 
 .highlight__card:hover .highlight__content {
+  color: #fff;
+}
+.highlight__card:hover .highlight__description p {
   color: #fff;
 }
 .highlight__card:hover .highlight__title {
