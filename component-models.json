@@ -421,7 +421,7 @@
       {
         "component": "container",
         "label": "Popular City 1",
-        "name": "city-1",
+        "name": "container",
         "valueType": "string",
         "collapsible": true,
         "fields": [
@@ -443,7 +443,7 @@
       {
         "component": "container",
         "label": "Popular City 2",
-        "name": "city-2",
+        "name": "container",
         "valueType": "string",
         "collapsible": true,
         "fields": [
