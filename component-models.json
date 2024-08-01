@@ -421,7 +421,7 @@
       {
         "component": "container",
         "label": "Popular City 1",
-        "name": "pc1",
+        "name": "container",
         "valueType": "string",
         "collapsible": true,
         "fields": [
@@ -436,28 +436,6 @@
             "name": "reference",
             "value": "",
             "label": "City 1 Icon",
-            "valueType": "string"
-          }
-        ]
-      },
-      {
-        "component": "container",
-        "label": "Popular City 2",
-        "name": "pc2",
-        "valueType": "string",
-        "collapsible": true,
-        "fields": [
-          {
-            "component": "text-input",
-            "label": "City 2 Name",
-            "name": "text",
-            "valueType": "string"
-          },
-          {
-            "component": "aem-content",
-            "name": "reference",
-            "value": "",
-            "label": "City 2 Icon",
             "valueType": "string"
           }
         ]
