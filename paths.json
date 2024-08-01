@@ -1,6 +1,7 @@
 {
   "mappings": [
     "/content/eds-poc/:/",
-    "/content/eds-poc/metadata:/metadata.json"
+    "/content/eds-poc/metadata:/metadata.json",
+    "/content/eds-poc/placeholders:/placeholders.json"
   ]
 }
