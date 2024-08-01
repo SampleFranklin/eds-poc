@@ -429,7 +429,8 @@
             "component": "text-input",
             "label": "City 1 Name",
             "name": "pc1_text",
-            "valueType": "string"
+            "valueType": "string",
+            "readOnly": true
           },
           {
             "component": "reference",
@@ -437,6 +438,14 @@
             "value": "",
             "label": "City 1 Icon",
             "valueType": "string"
+          },
+          {
+            "component": "text-input",
+            "name": "pc1_forcode",
+            "value": "",
+            "label": "City 1 Code",
+            "valueType": "string",
+            "hidden": true
           }
         ]
       },
@@ -451,7 +460,8 @@
             "component": "text-input",
             "label": "City 2 Name",
             "name": "pc2_text",
-            "valueType": "string"
+            "valueType": "string",
+            "readOnly": true
           },
           {
             "component": "reference",
@@ -459,6 +469,76 @@
             "value": "",
             "label": "City 2 Icon",
             "valueType": "string"
+          },
+          {
+            "component": "text-input",
+            "name": "pc2_forcode",
+            "value": "",
+            "label": "City 2 Code",
+            "valueType": "string",
+            "hidden": true
+          }
+        ]
+      },
+      {
+        "component": "container",
+        "label": "Popular City 3",
+        "name": "pc3",
+        "valueType": "string",
+        "collapsible": true,
+        "fields": [
+          {
+            "component": "text-input",
+            "label": "City 3 Name",
+            "name": "pc3_text",
+            "valueType": "string",
+            "readOnly": true
+          },
+          {
+            "component": "reference",
+            "name": "pc3_icon",
+            "value": "",
+            "label": "City 3 Icon",
+            "valueType": "string"
+          },
+          {
+            "component": "text-input",
+            "name": "pc3_forcode",
+            "value": "",
+            "label": "City 3 Code",
+            "valueType": "string",
+            "hidden": true
+          }
+        ]
+      },
+      {
+        "component": "container",
+        "label": "Popular City 4",
+        "name": "pc4",
+        "valueType": "string",
+        "collapsible": true,
+        "fields": [
+          {
+            "component": "text-input",
+            "label": "City 4 Name",
+            "name": "pc2_text",
+            "valueType": "string",
+            "readOnly": true
+          },
+          {
+            "component": "reference",
+            "name": "pc4_icon",
+            "value": "",
+            "label": "City 4 Icon",
+            "valueType": "string"
+          },
+          {
+            "component": "text-input",
+            "name": "pc4_forcode",
+            "value": "",
+            "label": "City 4 Code",
+            "valueType": "string",
+            "hidden": true
           }
         ]
       }
