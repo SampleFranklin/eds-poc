@@ -521,7 +521,7 @@
           {
             "component": "text-input",
             "label": "City 4 Name",
-            "name": "pc2_text",
+            "name": "pc4_text",
             "valueType": "string",
             "readOnly": true
           },
