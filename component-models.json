@@ -419,6 +419,30 @@
     "id": "location-test",
     "fields": [
       {
+        "component": "multiselect",
+        "name": "cities",
+        "label": "Select Cities to Show",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Delhi",
+            "value": "08"
+          },
+          {
+            "name": "Bengaluru",
+            "value": "02"
+          },
+          {
+            "name": "Mumbai",
+            "value": "05"
+          },
+          {
+            "name": "Kolkata",
+            "value": "06"
+          }
+        ]
+      },
+      {
         "component": "container",
         "label": "Popular City 1",
         "name": "pc1",
@@ -539,30 +563,6 @@
             "label": "City 4 Code",
             "valueType": "string",
             "hidden": true
-          }
-        ]
-      },
-      {
-        "component": "multiselect",
-        "name": "cities",
-        "label": "Select Cities to Show",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Delhi",
-            "value": "08"
-          },
-          {
-            "name": "Bengaluru",
-            "value": "02"
-          },
-          {
-            "name": "Mumbai",
-            "value": "05"
-          },
-          {
-            "name": "Kolkata",
-            "value": "06"
           }
         ]
       }
