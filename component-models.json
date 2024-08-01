@@ -432,7 +432,7 @@
             "valueType": "string"
           },
           {
-            "component": "aem-content",
+            "component": "reference",
             "name": "pc1_icon",
             "value": "",
             "label": "City 1 Icon",
@@ -454,7 +454,7 @@
             "valueType": "string"
           },
           {
-            "component": "aem-content",
+            "component": "reference",
             "name": "pc2_icon",
             "value": "",
             "label": "City 2 Icon",
