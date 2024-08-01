@@ -541,6 +541,30 @@
             "hidden": true
           }
         ]
+      },
+      {
+        "component": "multiselect",
+        "name": "cities",
+        "label": "Select Cities to Show",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Delhi",
+            "value": "08"
+          },
+          {
+            "name": "Bengaluru",
+            "value": "02"
+          },
+          {
+            "name": "Mumbai",
+            "value": "05"
+          },
+          {
+            "name": "Kolkata",
+            "value": "06"
+          }
+        ]
       }
     ]
   }
