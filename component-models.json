@@ -443,6 +443,12 @@
         "label": "Search Text"
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "name": "clText",
+        "label": "Current Location Text"
+      },
+      {
         "component": "multiselect",
         "name": "cities",
         "label": "Select Cities to Show",
