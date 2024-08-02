@@ -489,6 +489,13 @@
           },
           {
             "component": "text-input",
+            "name": "pc1_iconAlt",
+            "value": "",
+            "label": "City 1 Icon Alt Text",
+            "valueType": "string"
+          },
+          {
+            "component": "text-input",
             "name": "pc1_forcode",
             "value": "",
             "label": "City 1 Code",
@@ -516,6 +523,13 @@
             "name": "pc2_icon",
             "value": "",
             "label": "City 2 Icon",
+            "valueType": "string"
+          },
+          {
+            "component": "text-input",
+            "name": "pc2_iconAlt",
+            "value": "",
+            "label": "City 2 Icon Alt Text",
             "valueType": "string"
           },
           {
@@ -551,6 +565,13 @@
           },
           {
             "component": "text-input",
+            "name": "pc3_iconAlt",
+            "value": "",
+            "label": "City 3 Icon Alt Text",
+            "valueType": "string"
+          },
+          {
+            "component": "text-input",
             "name": "pc3_forcode",
             "value": "",
             "label": "City 3 Code",
@@ -578,6 +599,13 @@
             "name": "pc4_icon",
             "value": "",
             "label": "City 4 Icon",
+            "valueType": "string"
+          },
+          {
+            "component": "text-input",
+            "name": "pc4_iconAlt",
+            "value": "",
+            "label": "City 4 Icon Alt Text",
             "valueType": "string"
           },
           {

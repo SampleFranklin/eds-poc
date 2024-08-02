@@ -10,7 +10,20 @@ export default async function decorate(block) {
   const searchText = searchTextEl?.textContent?.trim();
   const citiesList = citiesEl?.textContent?.trim();
   const cities = citiesList.split(',');
-  console.log(popularCitiesEl);
+
+  const cityData = [];
+  popularCitiesEl.map((city) => {
+    const [cityNameEl,cityIconEl,cityForCodeEl] = city.firstElementChild.children;
+    const forCode = cityForCodeEl.textContent.trim();
+    if(Array.from(cities).find(code => code === forCode)){
+        cityData.push({
+            cityforCode:forCode,
+            cityIcon:cityIconEl.querySelector('picture')
+        })
+    }
+  })
+  console.log(cityData);
+
   block.innerHTML = utility.sanitizeHtml(`
           <button class="location-btn" data-forcode="08">
               Delhi
@@ -37,8 +50,9 @@ export default async function decorate(block) {
               </div>
           </div>
       `);
-  const { publishDomain, apiKey } = await fetchPlaceholders();
-  const url = `${publishDomain}/content/arena/services/token`;
+//  const { publishDomain, apiKey } = await fetchPlaceholders();
+//  const url = `${publishDomain}/content/arena/services/token`;
+  const url = 'https://dev-arena.marutisuzuki.com/content/arena/services/token';
   let authorization = null;
   try {
     const auth = await fetch(url);
@@ -168,7 +182,7 @@ export default async function decorate(block) {
   }
 
   const defaultHeaders = {
-    'x-api-key': apiKey,
+    'x-api-key': '3Oa87EBtBK9k4QQa87eYDaTB2CcLnbp7aqd00kqH',
     Authorization: authorization,
   };
 
@@ -197,11 +211,25 @@ export default async function decorate(block) {
       const obj = Object.keys(citiesObject).find(
         (key) => citiesObject[key].forCode === cityCode,
       );
+
+      const city = cityData.find(item => item.cityforCode === cityCode);
+      const cityIcon = city.cityIcon;
+
+      const cityDiv = document.createElement('div');
+      cityDiv.classList.add('top__city');
+
+      const imageDiv = document.createElement('div');
+      imageDiv.classList.add('top__city__icon');
+      imageDiv.appendChild(cityIcon);
+
       const p = document.createElement('p');
       p.className = 'selected__top__city';
       p.textContent = obj;
       p.setAttribute('data-forcode', cityCode);
-      topCities.appendChild(p);
+
+      cityDiv.appendChild(imageDiv);
+      cityDiv.appendChild(p);
+      topCities.appendChild(cityDiv);
     });
 
     populateAllCities(); // Populate all cities initially
