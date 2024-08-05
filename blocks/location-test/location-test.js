@@ -1,28 +1,36 @@
-//import { fetchPlaceholders } from '../../scripts/aem.js';
+import { fetchPlaceholders } from '../../scripts/aem.js';
 import { dispatchLocationChangeEvent } from '../../scripts/customEvents.js';
 import utility from '../../utility/utility.js';
 
 export default async function decorate(block) {
-  const [titleEl, fylTextEl, dylTextEl, searchTextEl, citiesEl, ...popularCitiesEl] = block.children;
+  const [titleEl, fylTextEl, dylTextEl, searchTextEl,clTextEl,...popularCitiesEl] = block.children;
   const title = titleEl?.textContent?.trim();
   const fylText = fylTextEl?.textContent?.trim();
   const dylText = dylTextEl?.textContent?.trim();
   const searchText = searchTextEl?.textContent?.trim();
-  const citiesList = citiesEl?.textContent?.trim();
-  const cities = citiesList.split(',');
+  const clText = clTextEl?.textContent?.trim();
+//  const citiesList = citiesEl?.textContent?.trim();
+//  const cities = citiesList.split(',');
 
   const cityData = [];
+  const cities = [];
   popularCitiesEl.map((city) => {
     const [cityNameEl,cityIconEl,cityForCodeEl] = city.firstElementChild.children;
     const forCode = cityForCodeEl.textContent.trim();
-    if(Array.from(cities).find(code => code === forCode)){
-        cityData.push({
-            cityforCode:forCode,
-            cityIcon:cityIconEl.querySelector('picture')
-        })
-    }
+    cities.push(forCode);
+    cityData.push({
+        cityforCode:forCode,
+        cityIcon:cityIconEl.querySelector('picture')
+    })
+//    if(Array.from(cities).find(code => code === forCode)){
+//        cityData.push({
+//            cityforCode:forCode,
+//            cityIcon:cityIconEl.querySelector('picture')
+//        })
+//    }
   })
-  console.log(cityData);
+
+  console.log(cities);
 
   block.innerHTML = utility.sanitizeHtml(`
           <button class="location-btn" data-forcode="08">
@@ -39,7 +47,10 @@ export default async function decorate(block) {
                       ${dylText}
                   </p>
                  </div>
-                 <div class="top__cities"></div>
+                  <p class="current-location__text">
+                    ${clText} / Delhi
+                  </p>
+                  <div class="top__cities"></div>
                 </div>
                 <div class="search-location">
                  <div class="search-box">
@@ -50,9 +61,9 @@ export default async function decorate(block) {
               </div>
           </div>
       `);
-//  const { publishDomain, apiKey } = await fetchPlaceholders();
-//  const url = `${publishDomain}/content/arena/services/token`;
-  const url = 'https://dev-arena.marutisuzuki.com/content/arena/services/token';
+
+  const { publishDomain, apiKey } = await fetchPlaceholders();
+  const url = `${publishDomain}/content/arena/services/token`;
   let authorization = null;
   try {
     const auth = await fetch(url);
@@ -138,7 +149,9 @@ export default async function decorate(block) {
   // Function to update Location Button with the selected city
   function updateLocationButton(cityName, forCode) {
     const locationButton = block.querySelector('.location-btn');
+    const currentLocationText = block.querySelector('.current-location__text');
     locationButton.textContent = cityName;
+    currentLocationText.textContent = `${clText} / ${cityName}` ;
     locationButton.setAttribute('data-forcode', forCode);
     dispatchLocationChangeEvent(forCode);
     block.querySelector('.geo-location').style.display = 'none';
