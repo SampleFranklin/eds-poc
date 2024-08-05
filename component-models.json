@@ -459,8 +459,7 @@
             "component": "text-input",
             "label": "City 1 Name",
             "name": "pc1_text",
-            "valueType": "string",
-            "readOnly": true
+            "valueType": "string"
           },
           {
             "component": "reference",
@@ -496,8 +495,7 @@
             "component": "text-input",
             "label": "City 2 Name",
             "name": "pc2_text",
-            "valueType": "string",
-            "readOnly": true
+            "valueType": "string"
           },
           {
             "component": "reference",
@@ -533,8 +531,7 @@
             "component": "text-input",
             "label": "City 3 Name",
             "name": "pc3_text",
-            "valueType": "string",
-            "readOnly": true
+            "valueType": "string"
           },
           {
             "component": "reference",
@@ -570,8 +567,7 @@
             "component": "text-input",
             "label": "City 4 Name",
             "name": "pc4_text",
-            "valueType": "string",
-            "readOnly": true
+            "valueType": "string"
           },
           {
             "component": "reference",
