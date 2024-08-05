@@ -62,8 +62,8 @@ export default async function decorate(block) {
           </div>
       `);
 
-  const { publishDomain, apiKey } = await fetchPlaceholders();
-  const url = `${publishDomain}/content/arena/services/token`;
+//  const { publishDomain, apiKey } = await fetchPlaceholders();
+  const url = 'https://dev-arena.marutisuzuki.com/content/arena/services/token';
   let authorization = null;
   try {
     const auth = await fetch(url);
